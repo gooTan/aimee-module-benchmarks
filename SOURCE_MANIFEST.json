@@ -1,0 +1,40 @@
+{
+  "schema_version": 1,
+  "module": "benchmarks",
+  "classification": "optional",
+  "execution": "process",
+  "runtime": "go",
+  "placements": [
+    "server",
+    "kb"
+  ],
+  "principal_class": 1,
+  "principal_ref": 25,
+  "stages": [
+    {
+      "id": 1,
+      "name": "benchmark-run",
+      "event_kind": 10497
+    },
+    {
+      "id": 2,
+      "name": "benchmark-latency-summary",
+      "event_kind": 10498
+    }
+  ],
+  "source_sha256": "26fde7bdf1ddad579ef07308b2563aa35752280a864dcd446acb650dc316ac1f",
+  "owned_files": [
+    "src/modules/benchmarks/module.yaml",
+    "src/modules/benchmarks/agent_eval.c",
+    "src/modules/benchmarks/agent_eval_baseline.c",
+    "src/modules/benchmarks/agent_eval_benchmarks.c",
+    "src/modules/benchmarks/agent_eval_memory_support.c",
+    "src/modules/benchmarks/module_adapter.c",
+    "src/modules/benchmarks/agent_eval.h",
+    "src/modules/benchmarks/agent_eval_internal.h",
+    "src/modules/benchmarks/include/aimee/benchmarks/module_api.h",
+    "docs/modules/benchmarks.md",
+    "server-go/modules/benchmarks/benchmarks.go",
+    "server-go/modules/benchmarks/benchmarks_test.go"
+  ]
+}
